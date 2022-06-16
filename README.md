@@ -130,7 +130,13 @@ var sound = CoreSystem.LoadStreamedSound("test.mp3");
 var channel = sound.Play();
 channel.Looping = true;
 ```
-4. Compile and hope that you (and me) did everything right.
+
+4. Don't forget to update the `FMODManager` in your Update() method:
+```c#
+FMODManager.Update();
+```
+
+5. Compile and hope that you (and me) did everything right.
 
 You can also check out the incluided [Demos project](/ChaiFoxes.FMODAudio.Demos). 
 
